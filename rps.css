@@ -1,0 +1,130 @@
+@keyframes icna {
+    0.2%{
+        transform: scale(1.2,1.5) translate(5vmin,-3vmin);
+    }
+}
+@keyframes gamebg {
+    0.1%{
+        background-size: cover;
+    }
+}
+@keyframes heads {
+    0.1%{
+        transform: scale(1.2,1.2);
+        background: url(gradienta-QWutu2BRpOs-unsplash.jpg);
+        
+    }
+}
+@keyframes bcg {
+    0.1%{
+        background: url(gradienta-QWutu2BRpOs-unsplash.jpg);
+    }
+}
+body{
+    background: url(bcg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    margin: 0;padding: 0;
+}
+.main_container{
+    width: 90vmin;
+    height: 90vmin;
+    background: url(sam-carter-Y778ifAocXA-unsplash.jpg);
+    background-size: cover;
+    box-shadow: 0px 0px 50px 5px cyan;
+    border-radius: 15px;
+    border: 5px double wheat;
+}
+.heading{
+    width: 90vmin;
+    height: 20vmin;
+    background: url(lubo-minar-j2RgHfqKhCM-unsplash.jpg);
+    border-bottom: 5px double wheat;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.icn{
+    width: 25vmin;
+    height: 25vmin;
+    background-color: aqua;
+    border: 2px solid yellow;
+    margin: 1.5vmin;
+    font-size: 0.000001vmin;
+    border: 5px double wheat;
+}
+.game{
+    display: flex;
+    align-items: center;
+    height: 70vmin;
+}
+#Rock{
+    margin-left: 3vmin;
+}
+.icn:hover{
+    animation: icna 100s;
+    cursor: pointer;
+}
+.h1{
+    color: gold;
+    font-weight: bold;
+    width: 60vmin;
+    font-size: 3vmin;
+    text-align: center;
+}
+.h2, .h3, .h4{
+    color: antiquewhite;
+    height: 4vmin;
+    width: 50vmin;
+    text-align: center;
+    font-size: 2vmin;
+}
+.u1,.c1{
+    width: 24vmin;
+    text-align: center;
+    height: 2.8vmin;
+    background-color: wheat;
+    border-radius: 10px;
+    font-weight: bold;
+    display: inline-block;
+    color: blue;
+}
+#Rock{
+    background: url(rock.png);
+    background-size: cover;
+}
+#Paper{
+    background: url(paper.jpg);
+    background-size: cover;
+}
+#Scissor{
+    background: url(scissor.jpg);
+    background-size: cover;
+}
+.h4{
+    color: aqua;
+    font-size: 4vmin;
+}
+.h1:hover,.h2:hover,.h3:hover,.h4:hover{
+    animation: heads 100s;
+}
+
+.heading:hover{
+    animation: bcg 100s;
+}
+
+.game:hover{
+    animation: gamebg 100s;
+    background: url(nicolas-cool-GSQISzQlYtY-unsplash.jpg);
+}
+body:hover{
+
+    background-size: cover;
+}
